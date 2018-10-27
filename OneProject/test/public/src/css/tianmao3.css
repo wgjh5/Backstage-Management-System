@@ -1,0 +1,49 @@
+#nav-bar a,#nav-bar li:before {
+    display:inline-block;
+    vertical-align:middle
+}
+#nav-bar {
+    position:relative;
+    height:36px;
+    width:100%;
+    z-index:13
+}
+#nav-bar * {
+    margin:0;
+    padding:0
+}
+#nav-bar ul {
+    margin-left:240px;
+    overflow:hidden
+}
+#nav-bar ul:after {
+    display:block;
+    clear:both;
+    height:0;
+    content:' '
+}
+#nav-bar li {
+    float:left;
+    list-style:none
+}
+#nav-bar li.cur a,#nav-bar li:hover a {
+    color:#e22a40
+}
+#nav-bar li:before {
+    content:'\20';
+    height:12px;
+    border-right:1px solid #d9d9d9;
+    width:0
+}
+#nav-bar a {
+    font-size:16px;
+    color:#333;
+    line-height:36px;
+    margin-left:-1px;
+    padding:0 25px;
+    text-decoration:none;
+    font-weight:700
+}
+#nav,#nav-bar .hidden,#nav-bar ul {
+    display:none
+}
